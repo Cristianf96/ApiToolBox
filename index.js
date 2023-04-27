@@ -18,7 +18,7 @@ const Headers = {
 app.use(cors());
 app.use(express.json())
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/', (req, res) => res.send('Hello ToolBox!'))
 
 app.get('/files/list', async (req, res) => {
     const requestListFiles = await axios.get(urlListFiles, Headers)
